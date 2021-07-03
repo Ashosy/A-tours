@@ -1,0 +1,17 @@
+/* .cursor{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+
+    
+    
+} */
+
+body{
+    cursor: none;
+}

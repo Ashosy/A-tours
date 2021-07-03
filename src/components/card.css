@@ -1,0 +1,83 @@
+.facts-div{
+    background-color: burlywood;
+    width: 100%;
+    height: 100vh;
+}
+
+.facts-div2{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+}
+
+.title-dduknw{
+    color: white;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 30%;
+    font-size: 62px;
+}
+
+.front, .back{
+    backface-visibility: hidden;
+    position: relative;
+    padding: 1rem;
+    margin: 0;
+}
+.front{
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 40vh;
+    margin-left: -20px;
+    margin-top: 52px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px -5px;
+    border-radius: .25rem;
+    /* border: 2px solid gray; */
+}
+
+.front:hover,.back:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px -5px grey;
+  
+}
+.front:hover{
+    transform: scale(1.05);
+}
+
+.back{
+    background-color: rgb(156, 156, 214);
+    width: 100%;
+    height: 40vh;
+    margin-top: 75px;
+    margin-bottom: 30px;
+    display: inline-block;
+    box-shadow: 0px 0px 10px -5px;
+    backface-visibility: hidden;
+    border-radius: .25rem;
+    transform: rotateY(180deg);
+    margin-right: -20px;
+}
+
+.card.flip{
+    --rotate-y : 180deg;
+    /* border: 2px solid navy; */
+}
+
+.card{
+    width: 40%;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 150ms;
+    margin: 0; 
+    margin-top: 20px;
+    margin-left: 151px;
+    transform-origin: center;
+    /* border: 2px solid red; */
+}
